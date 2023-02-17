@@ -48,10 +48,10 @@ def resize_img(img, size, padColor=0):
 class My_GUI(QMainWindow):
     def __init__(self):
         super(My_GUI, self).__init__()
-        uic.loadUi('video_label.ui', self)
+        uic.loadUi('video_label1/video_label.ui', self)
 
         #--------------------------------------------------------------------------------------
-        self.label_file = 'Video_label.csv'
+        self.label_file = 'video_label1/Video_label.csv'
         # --------------------------------------------------------------------------------------
         self.video_path = ''
 
