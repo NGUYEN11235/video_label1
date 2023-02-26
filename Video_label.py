@@ -73,7 +73,7 @@ class My_GUI(QMainWindow):
 
 
     def load_video(self):
-        self.video_path = QtWidgets.QFileDialog.getOpenFileName(self,'Open video file', filter='Video files (*.mp4 *.mkv, *.avi)')[0]
+        self.video_path = QtWidgets.QFileDialog.getOpenFileName(self,'Open video file', filter='Video files (*.mp4 *.mkv *.avi)')[0]
         if len(self.video_path) == 0:
             return
         self.video = cv2.VideoCapture(self.video_path)
